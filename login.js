@@ -32,21 +32,6 @@ const Login=()=>{
     const canvasElement = useRef();
     const videoElement = useRef();
     const [openLoader,setOpenLoader] = useState(false);
-    // const [loading, setLoading] = useState(false);
-    // const [success, setSuccess] = useState(false);
-
-    
-    // const handleLogin = () => {
-    //     setLoading(true);
-    //     // Make API call to authenticate the user
-    //     // ...
-    //     setSuccess(true);
-    //     setLoading(false);
-    //   };
-
-    
-    // const [action,setAction] = useState("normal");
-
     const [user, setUser] = useState({
         faceimg: ""
     })
@@ -192,23 +177,11 @@ const Login=()=>{
         setOpen(true);  
     }
 
-    // function loadChatbot(){
-    //     window.charlando.init("0943c15863464c4fa09dd6de936bbc46");
-    // }
-
-    // useEffect(()=>{
-    //     const script = document.createElement("script");
-    //     script.src = "https://cdn.jsdelivr.net/gh/pratyushtiwary/charlando-lib/charlando.js";
-    //     script.onload = loadChatbot;
-    //     document.querySelector("body").append(script);
-    // },[]);
-
     return(
         <>
         <Loader open={openLoader}/>
         <Head>
             <title>Login | Acceso</title>
-            {/* <link href="https://cdn.jsdelivr.net/gh/pratyushtiwary/charlando-lib/prod/charlando.css" rel="stylesheet" /> */}
         </Head>
         <Grid>
             <Paper elevation={10} style={paperStyle} className="round">
