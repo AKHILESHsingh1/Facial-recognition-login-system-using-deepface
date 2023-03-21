@@ -246,11 +246,6 @@ const Signup = () => {
                                     
 
 
-                                    {/* <figure>
-                                        <img src={Signuppic} alt="register" style={{ width: "100%", height: 'fit-content' }} />
-                                    </figure> */}
-
-
                                 </div>
                             </form>
                         </div>
@@ -275,8 +270,6 @@ const Signup = () => {
                 <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
                     <Button onClick={handleCapture} id="startbutton">Capture</Button>
-
-                    {/* <Button onClick={handleCapture} value={user.image}>Capture</Button> */}
 
                 </DialogActions>
             </Dialog>
