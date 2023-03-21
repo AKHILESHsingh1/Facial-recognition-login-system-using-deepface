@@ -47,59 +47,7 @@ def compare_faces():
     return verified
 
 
-
-    
-
-# def compare_base64_images(img1, img2):
-#     # Decode the base64 encoded images
-#     img1_bytes = base64.b64decode(img1)
-#     img2_bytes = base64.b64decode(img2)
-    
-#     # Convert the bytes to numpy arrays
-#     img1 = np.frombuffer(img1_bytes, np.uint8)
-#     img2 = np.frombuffer(img2_bytes, np.uint8)
-    
-#     # Convert the numpy arrays to OpenCV images
-#     img1 = cv2.imdecode(img1, cv2.IMREAD_GRAYSCALE)
-#     img2 = cv2.imdecode(img2, cv2.IMREAD_GRAYSCALE)
-    
-#     # Compare the two images using OpenCV
-#     ssim = cv2.quality.StructuralSimilarity(cv2.quality.QualityBase.BRISQUE)
-#     similarity = ssim.compute(img1, img2)
-    
-#     # Return the result of the comparison
-#     return similarity
-
-
-
-
-
-    # # opencv(openFace, deepface,    not working
-
-
-
-
-    # # Decode the image from base64 to binary
-    # known_image= face_recognition.load_image_file(image1_encoded)
-
-    # # Load the image of the person that is being verified
-    # unknown_image = face_recognition.load_image_file(image2_encoded)
-
-
-    # # Get the face encodings of the known and unknown images
-    # known_encoding = face_recognition.face_encodings(known_image)[0]
-    # unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
-
-    # # Compare the face encodings
-    # result = face_recognition.compare_faces([known_encoding], unknown_encoding)
-
-    # # Check if the result is True (person is verified) or False (person is not verified)
-    # if result[0] == True:
-    #     print("Person is verified")
-    # else:
-    #     print("Person is not verified")
   
-      
 # Running app
 if __name__ == '__main__':
     port = 5001
